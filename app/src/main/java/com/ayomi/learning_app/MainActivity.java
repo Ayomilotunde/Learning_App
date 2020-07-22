@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
         switch (item.getItemId()){
             case R.id.add:
                 Toast.makeText(this, "Add", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(this, Activity2.class));
                 break;
             case R.id.remove:
                 Toast.makeText(this, "Remove", Toast.LENGTH_SHORT).show();

@@ -13,14 +13,12 @@ public class MessageActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_message);
-
+        Log.d("Message Activity Lifecycle", "onCreate");
 
         Intent intent = getIntent();
         String message = intent.getStringExtra("message");
         TextView textView = findViewById(R.id.txt_display_message);
         textView.setText(message);
-
-        Log.d("Message Activity Lifecycle", "onCreate");
     }
 
     @Override
